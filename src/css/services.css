@@ -13,6 +13,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  object-fit: cover;
 }
 
 .services-header {
@@ -36,6 +37,7 @@
   margin-top: 64px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 120px;
 }
 
 .services-card {
