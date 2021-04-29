@@ -1,0 +1,109 @@
+#directions {
+  background: #323232;
+  padding-top: 200px;
+  padding-bottom: 160px;
+  position: relative;
+  top: -80px;
+}
+
+.directions-header {
+  text-align: center;
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 60px;
+  color: #ffffff;
+  position: relative;
+  z-index: 2;
+  margin-bottom: -20px;
+}
+
+.directions-header-background {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 150px;
+  line-height: 150px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.08);
+  position: absolute;
+  top: 165px;
+  z-index: 2;
+}
+
+.directions-rect-1 {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(3px);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  position: absolute;
+  top: 64px;
+  right: -22px;
+  width: 731px;
+  height: 719px;
+}
+
+.directions-ellipse-1 {
+  position: absolute;
+  width: 751px;
+  height: 751px;
+  right: 245px;
+  top: 172px;
+  background: rgba(236, 64, 64, 0.5);
+  mix-blend-mode: screen;
+  filter: blur(340px);
+}
+
+.directions-content {
+  display: flex;
+  margin-top: 80px;
+  position: relative;
+  z-index: 2;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.directions-content-body {
+  width: 540px;
+}
+
+.directions-content-header {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 40px;
+  color: #ffffff;
+}
+
+.directions-content-description {
+  margin-top: 30px;
+  margin-bottom: -20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 135%;
+  color: #ffffff;
+}
+
+.directions-ellipse-2 {
+  position: absolute;
+  width: 755px;
+  height: 755px;
+  left: 260px;
+  top: 769px;
+  background: rgba(64, 112, 236, 0.5);
+  mix-blend-mode: screen;
+  filter: blur(340px);
+}
+
+.directions-ellipse-3 {
+  position: absolute;
+  width: 751px;
+  height: 751px;
+  left: 680px;
+  top: 1381px;
+  background: rgba(236, 64, 64, 0.5);
+  mix-blend-mode: screen;
+  filter: blur(340px);
+}
