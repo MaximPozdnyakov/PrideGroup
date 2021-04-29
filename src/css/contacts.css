@@ -96,3 +96,43 @@ input:focus {
   line-height: 19px;
   color: #c4c4c4;
 }
+
+@media (max-width: 575.98px) {
+  #contacts {
+    width: 100%;
+    height: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .contacts-body {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacts-message {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  .contacts-header {
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .contacts-description {
+    font-size: 20px;
+    line-height: 23px;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .contacts-form {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
