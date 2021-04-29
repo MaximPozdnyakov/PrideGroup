@@ -77,3 +77,41 @@
   line-height: 19px;
   color: #fff;
 }
+
+.header-mobile-icons {
+  display: none;
+}
+
+@media (max-width: 575.98px) {
+  .header {
+    height: 66px;
+  }
+
+  .header-content {
+    height: 66px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .header-img {
+    width: 81px;
+    height: 66px;
+    margin-right: 0;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .header-contacts {
+    display: none;
+  }
+
+  .header-phone-mobile {
+    margin-right: 12px;
+  }
+
+  .header-mobile-icons {
+    display: flex;
+  }
+}
