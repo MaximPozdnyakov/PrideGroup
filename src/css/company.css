@@ -1,0 +1,139 @@
+#company {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+  position: relative;
+}
+
+.company-header {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 60px;
+  text-align: center;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.company-dots {
+  position: absolute;
+  left: calc(50% - 180px);
+  top: -36px;
+}
+
+.company-content {
+  margin-top: 82px;
+  display: flex;
+}
+
+.company-description {
+  width: 503px;
+  margin-right: 176px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 135%;
+  color: #222222;
+}
+
+.company-img {
+  position: relative;
+  top: -23px;
+}
+
+.lead-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.company-description-bold {
+  font-family: "Gilroy SemiBold";
+}
+
+.company-features {
+  align-self: flex-start;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 102px;
+}
+
+.company-feature {
+  margin-right: 45px;
+  position: relative;
+}
+
+.company-feature-main {
+  font-family: "Gilroy Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 135%;
+  color: #ec4040;
+  position: relative;
+  z-index: 1;
+}
+
+.company-feature-description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 135%;
+  color: #222222;
+  position: relative;
+  top: -4px;
+}
+
+.company-feature-rect {
+  position: absolute;
+  width: 84px;
+  height: 31px;
+  background: rgba(196, 196, 196, 0.22);
+  top: 30px;
+  left: -7px;
+}
+
+.company-cards {
+  align-self: flex-start;
+  display: flex;
+  width: 100%;
+  height: 342px;
+  justify-content: space-between;
+}
+
+.company-card {
+  width: 270px;
+  height: 342px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  border-top: 10px solid #ec4040;
+  background: #ffffff;
+  box-shadow: 0px 4px 40px rgba(123, 140, 153, 0.3);
+  padding-right: 25.5px;
+  padding-left: 25.5px;
+}
+
+.company-card-header {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-family: "Gilroy SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #222222;
+}
+
+.company-card-body {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #222222;
+}

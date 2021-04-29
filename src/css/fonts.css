@@ -18,3 +18,10 @@
   font-weight: 700;
   src: url("/fonts/GilroyBold.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "Gilroy SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/GilroySemiBold.ttf") format("truetype");
+}

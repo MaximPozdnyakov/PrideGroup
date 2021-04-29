@@ -1,5 +1,6 @@
 .main {
   width: 100%;
+  background: #fff;
 }
 
 .lead {
@@ -13,6 +14,8 @@
   height: 620px;
   background: linear-gradient(180deg, #292929 7.66%, rgba(41, 41, 41, 0) 100%);
   padding-top: 15px;
+  position: relative;
+  z-index: 9;
 }
 
 .lead-background {
@@ -44,4 +47,26 @@
 
 .lead-text-red {
   color: #ec4040;
+}
+
+.ellipse-top {
+  position: absolute;
+  width: 584px;
+  height: 584px;
+  left: 1047px;
+  top: -95px;
+  background: rgba(236, 64, 64, 0.5);
+  mix-blend-mode: screen;
+  filter: blur(340px);
+}
+
+.ellipse-bottom {
+  position: absolute;
+  width: 755px;
+  height: 755px;
+  left: 118px;
+  top: 352px;
+  background: rgba(64, 112, 236, 0.5);
+  mix-blend-mode: screen;
+  filter: blur(340px);
 }
