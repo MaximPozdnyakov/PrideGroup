@@ -26,11 +26,12 @@
 .company-content {
   margin-top: 82px;
   display: flex;
+  align-self: flex-start;
 }
 
 .company-description {
   width: 503px;
-  margin-right: 176px;
+  margin-right: 86px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;

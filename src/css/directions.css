@@ -30,6 +30,8 @@
   position: absolute;
   top: 165px;
   z-index: 2;
+  width: 100%;
+  left: 0;
 }
 
 .directions-rect-1 {
@@ -65,6 +67,12 @@
 
 .directions-content-body {
   width: 540px;
+  margin-right: 40px;
+}
+
+.directions-content-body:nth-child(2) {
+  margin-left: 40px;
+  margin-right: 0;
 }
 
 .directions-content-header {

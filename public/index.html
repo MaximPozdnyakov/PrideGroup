@@ -8,6 +8,7 @@
     Организация комерческих и корпоративных мероприятий с пользой для бизнеса
     и сотрудников
   </title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
   <link rel="stylesheet" href="../src/css/app.css" />
 </head>
 
@@ -27,44 +28,47 @@
 
       <div class="lead-content">
         <div class="header">
-          <div class="container header-content">
-            <img class="header-img" src="/img/logo.svg" width="121" height="100" alt=" " />
+          <div class="container ">
+            <div class="header-content">
 
-            <ul class="menu">
-              <li class="menu-item">
-                <a href="#company">О компании</a>
-                <div class="menu-item-line"></div>
-              </li>
-              <li class="menu-item">
-                <a href="#directions">Направления бизнеса</a>
-                <div class="menu-item-line"></div>
-              </li>
-              <li class="menu-item">
-                <a href="#services">Услуги</a>
-                <div class="menu-item-line"></div>
-              </li>
-              <li class="menu-item">
-                <a href="#portfolio">Портфолио</a>
-                <div class="menu-item-line"></div>
-              </li>
-              <li class="menu-item">
-                <a href="#contacts">Контакты</a>
-                <div class="menu-item-line"></div>
-              </li>
-            </ul>
+              <img class="header-img" src="/img/logo.svg" width="121" height="100" alt=" " />
 
-            <div class="header-contacts">
-              <div class="header-contact">
-                <img src="/img/phone-icon.svg" alt=" " />
-                <span class="header-contact-text">+7 (999) 999 - 99 - 99</span>
-              </div>
-              <div class="header-contact">
-                <img src="/img/phone-icon.svg" alt=" " />
-                <span class="header-contact-text">+7 (999) 999 - 99 - 99</span>
-              </div>
-              <div class="header-contact">
-                <img src="/img/phone-icon.svg" alt=" " />
-                <span class="header-contact-text">@funvector</span>
+              <ul class="menu">
+                <li class="menu-item">
+                  <a href="#company">О компании</a>
+                  <div class="menu-item-line"></div>
+                </li>
+                <li class="menu-item">
+                  <a href="#directions">Направления бизнеса</a>
+                  <div class="menu-item-line"></div>
+                </li>
+                <li class="menu-item">
+                  <a href="#services">Услуги</a>
+                  <div class="menu-item-line"></div>
+                </li>
+                <li class="menu-item">
+                  <a href="#portfolio">Портфолио</a>
+                  <div class="menu-item-line"></div>
+                </li>
+                <li class="menu-item">
+                  <a href="#contacts">Контакты</a>
+                  <div class="menu-item-line"></div>
+                </li>
+              </ul>
+
+              <div class="header-contacts">
+                <div class="header-contact">
+                  <img src="/img/phone-icon.svg" alt=" " />
+                  <span class="header-contact-text">+7 (999) 999 - 99 - 99</span>
+                </div>
+                <div class="header-contact">
+                  <img src="/img/phone-icon.svg" alt=" " />
+                  <span class="header-contact-text">+7 (999) 999 - 99 - 99</span>
+                </div>
+                <div class="header-contact">
+                  <img src="/img/phone-icon.svg" alt=" " />
+                  <span class="header-contact-text">@funvector</span>
+                </div>
               </div>
             </div>
           </div>
@@ -230,7 +234,7 @@
           <button class="primary-btn">Подробнее</button>
         </div>
 
-        <img src="/img/directions-1.png" height="469" width="560" alt=" " />
+        <img src="/img/directions-3.png" height="469" width="560" alt=" " />
       </div>
     </div>
 
@@ -299,49 +303,63 @@
           <div class="portfolio-header">Портфолио</div>
           <div class="portfolio-header-background">Портфолио</div>
 
-          <div class="portfolio-slider-background"></div>
+          <img src="/img/arrow-left.svg" width="28" top="56" alt=" " class="portfolio-arrow-left"
+            id="portfolio-arrow-left" />
+          <img src="/img/arrow-right.svg" alt=" " width="28" top="56" class="portfolio-arrow-right"
+            id="portfolio-arrow-right" />
 
-          <div class="portfolio-slider">
-            <img src="/img/dots-light.png" alt=" " width="120" height="120" class="portfolio-dots" />
-            <div class="portfolio-circle-1"></div>
-            <div class="portfolio-circle-2"></div>
-            <img src="/img/arrow-left.svg" width="28" top="56" alt=" " class="portfolio-arrow-left"
-              id="portfolio-arrow-left" />
-            <img src="/img/arrow-right.svg" alt=" " width="28" top="56" class="portfolio-arrow-right"
-              id="portfolio-arrow-right" />
+          <div id="slide-1">
+            <div class="portfolio-slider-background"></div>
 
-            <div class="portfolio-slider-left">
-              <div class="portfolio-slider-subheader">День города</div>
-              <div class="portfolio-slider-header">петрозаводска</div>
+            <div class="portfolio-slider">
+              <img src="/img/dots-light.png" alt=" " width="120" height="120" class="portfolio-dots" />
+              <div class="portfolio-circle-1"></div>
+              <div class="portfolio-circle-2"></div>
 
-              <div class="portfolio-slider-images">
-                <img src="/img/portfolio-1.png" alt=" " class="portfolio-slider-img" />
-                <img src="/img/portfolio-2.png" alt=" " class="portfolio-slider-img" />
-                <img src="/img/portfolio-3.png" alt=" " class="portfolio-slider-img" />
-              </div>
-            </div>
+              <div class="portfolio-slider-left">
+                <div class="portfolio-slider-subheader">День города</div>
+                <div class="portfolio-slider-header">петрозаводска</div>
 
-            <div class="portfolio-slider-body">
-              <div class="client-header">Клиент</div>
-              <div class="client-description">
-                Администрация г. Петрозаводск
+                <div class="portfolio-slider-images">
+                  <img src="/img/portfolio-1.png" alt=" " class="portfolio-slider-img" />
+                  <img src="/img/portfolio-2.png" alt=" " class="portfolio-slider-img" />
+                  <img src="/img/portfolio-3.png" alt=" " class="portfolio-slider-img" />
+                </div>
               </div>
 
-              <div class="task-header">задача</div>
-              <div class="task-description">
-                Организация Дня города Петрозаводска
-              </div>
+              <div class="portfolio-slider-body">
+                <div class="client-header">Клиент</div>
+                <div class="client-description">
+                  Администрация г. Петрозаводск
+                </div>
 
-              <div class="result-header">результат</div>
-              <div class="result-description">
-                Найдены новые формы проведения городского праздника в формате
-                организации карнавального шествия в рамках стадионной площадки.
-                Режиссерской группой были поставлены тематические номера с
-                привлечением творческих коллективов г. Петрозаводска и
-                приглашенных звезд Российской эстрады.
+                <div class="task-header">задача</div>
+                <div class="task-description">
+                  Организация Дня города Петрозаводска
+                </div>
+
+                <div class="result-header">результат</div>
+                <div class="result-description">
+                  Найдены новые формы проведения городского праздника в формате
+                  организации карнавального шествия в рамках стадионной площадки.
+                  Режиссерской группой были поставлены тематические номера с
+                  привлечением творческих коллективов г. Петрозаводска и
+                  приглашенных звезд Российской эстрады.
+                </div>
               </div>
             </div>
           </div>
+          <div id="slide-2" class="hidden slide">2</div>
+          <div id="slide-3" class="hidden slide">3</div>
+          <div id="slide-4" class="hidden slide">4</div>
+          <div id="slide-5" class="hidden slide">5</div>
+          <div id="slide-6" class="hidden slide">6</div>
+          <div id="slide-7" class="hidden slide">7</div>
+          <div id="slide-8" class="hidden slide">8</div>
+          <div id="slide-9" class="hidden slide">9</div>
+          <div id="slide-10" class="hidden slide">10</div>
+          <div id="slide-11" class="hidden slide">11</div>
+          <div id="slide-12" class="hidden slide">12</div>
 
           <div class="portfolio-slider-counter">
             <span id="portfolio-slider-counter">1</span>/12
@@ -420,6 +438,7 @@
       </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
     <script src="../src/main.js"></script>
 </body>
 

@@ -5,6 +5,8 @@
 
 .header-content {
   height: 100px;
+  width: 1069px;
+  margin: auto;
   display: flex;
   align-items: center;
   position: relative;
@@ -12,16 +14,15 @@
 
 .header-img {
   margin-right: 44px;
-  margin-left: 57px;
 }
 
 .menu {
   display: flex;
-  margin-right: 83px;
+  margin-right: 78.29px;
 }
 
 .menu-item {
-  margin-right: 35px;
+  margin-right: 32.5px;
   cursor: pointer;
   position: relative;
   padding-left: 5px;
