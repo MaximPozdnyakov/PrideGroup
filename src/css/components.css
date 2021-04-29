@@ -46,8 +46,12 @@
   text-transform: uppercase;
   color: #ffffff;
   border: none;
-  padding: 19px 66.5px 19px 66.5px;
+  padding: 19px 0px 19px 0px;
   margin-top: 50px;
   width: max-content;
   cursor: pointer;
+  width: 221px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
 }
