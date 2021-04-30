@@ -321,8 +321,12 @@
   .company-cards {
     display: flex;
     height: 342px;
-    width: 1140px;
+    width: 100vw;
     flex-wrap: nowrap;
+    overflow-x: hidden;
+    position: relative;
+    left: calc(100% / 2 - 100vw / 2);
+    padding-right: calc(100% / 2 - 100vw / 2);
   }
 
   .company-card {
@@ -407,8 +411,12 @@
   .company-cards {
     display: flex;
     height: 342px;
-    width: 1140px;
+    width: calc(100% + 30px);
     flex-wrap: nowrap;
+    overflow-x: hidden;
+    position: relative;
+    left: -15px;
+    padding-left: 15px;
   }
 
   .company-card {
