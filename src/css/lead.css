@@ -1,3 +1,7 @@
+html {
+  overflow-x: hidden;
+}
+
 .main {
   width: 100%;
   background: #fff;
@@ -77,6 +81,38 @@
   filter: blur(340px);
 }
 
+@media (max-width: 991.98px) {
+  .lead-text {
+    font-size: 50px;
+    line-height: 50px;
+    margin-top: 103px;
+    margin-bottom: 10px;
+  }
+
+  .ellipse-bottom {
+    position: absolute;
+    width: 755px;
+    height: 755px;
+    left: auto;
+    right: 471px;
+    top: 352px;
+    background: rgba(64, 112, 236, 0.5);
+    mix-blend-mode: screen;
+    filter: blur(340px);
+  }
+
+  .ellipse-top {
+    position: absolute;
+    width: 584px;
+    height: 584px;
+    left: 471px;
+    top: -95px;
+    background: rgba(236, 64, 64, 0.5);
+    mix-blend-mode: screen;
+    filter: blur(340px);
+  }
+}
+
 @media (max-width: 575.98px) {
   .lead {
     height: 510px;
@@ -126,38 +162,6 @@
     left: -655px;
     top: 352px;
     background: rgba(64, 112, 236, 0.5);
-    mix-blend-mode: screen;
-    filter: blur(340px);
-  }
-}
-
-@media (max-width: 991.98px) {
-  .lead-text {
-    font-size: 50px;
-    line-height: 50px;
-    margin-top: 103px;
-    margin-bottom: 10px;
-  }
-
-  .ellipse-bottom {
-    position: absolute;
-    width: 755px;
-    height: 755px;
-    left: auto;
-    right: 471px;
-    top: 352px;
-    background: rgba(64, 112, 236, 0.5);
-    mix-blend-mode: screen;
-    filter: blur(340px);
-  }
-
-  .ellipse-top {
-    position: absolute;
-    width: 584px;
-    height: 584px;
-    left: 471px;
-    top: -95px;
-    background: rgba(236, 64, 64, 0.5);
     mix-blend-mode: screen;
     filter: blur(340px);
   }

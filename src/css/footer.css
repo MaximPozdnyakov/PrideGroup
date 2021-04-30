@@ -28,7 +28,7 @@
 }
 
 .footer-menu .menu-item {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   margin-right: 0;
   width: max-content;
 }
@@ -43,7 +43,7 @@
 }
 
 .footer-contacts .header-contact {
-  margin-bottom: 16px;
+  margin-bottom: 15.5px;
 }
 
 .footer-author {
@@ -85,6 +85,66 @@
 
 .footer-contacts-mobile {
   display: none;
+}
+
+@media (max-width: 991.98px) {
+  .footer {
+    height: 255px;
+    overflow-x: hidden;
+  }
+
+  .footer-bg {
+    height: 255px;
+  }
+
+  .footer-content {
+    height: 255px;
+    background: none;
+    padding-top: 40px;
+    z-index: 2;
+  }
+
+  .footer-bg-tablet {
+    position: absolute;
+    width: 1200px;
+    height: 255px;
+    left: -216px;
+    bottom: 0px;
+    background: linear-gradient(
+      90deg,
+      #222222 18.21%,
+      rgba(236, 64, 64, 0.2) 69.5%
+    );
+    z-index: 1;
+  }
+
+  .footer-logo {
+    width: 97px;
+    height: 80px;
+  }
+
+  .footer-menu {
+    margin-left: 40px;
+    margin-right: 35px;
+  }
+
+  .footer-menu .menu-item {
+    margin-bottom: 15px;
+  }
+
+  .footer-contacts {
+    margin-left: 35px;
+  }
+
+  .footer-contacts .header-contact {
+    margin-bottom: 15px;
+    display: flex;
+  }
+
+  .footer-location {
+    top: 64.54px;
+    right: -10%;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -145,65 +205,5 @@
   .footer-contacts-mobile .header-contact {
     margin-bottom: 16px;
     display: flex;
-  }
-}
-
-@media (max-width: 991.98px) {
-  .footer {
-    height: 255px;
-    overflow-x: hidden;
-  }
-
-  .footer-bg {
-    height: 255px;
-  }
-
-  .footer-content {
-    height: 255px;
-    background: none;
-    padding-top: 40px;
-    z-index: 2;
-  }
-
-  .footer-bg-tablet {
-    position: absolute;
-    width: 1200px;
-    height: 255px;
-    left: -216px;
-    bottom: 0px;
-    background: linear-gradient(
-      90deg,
-      #222222 18.21%,
-      rgba(236, 64, 64, 0.2) 69.5%
-    );
-    z-index: 1;
-  }
-
-  .footer-logo {
-    width: 97px;
-    height: 80px;
-  }
-
-  .footer-menu {
-    margin-left: 40px;
-    margin-right: 35px;
-  }
-
-  .footer-menu .menu-item {
-    margin-bottom: 15px;
-  }
-
-  .footer-contacts {
-    margin-left: 35px;
-  }
-
-  .footer-contacts .header-contact {
-    margin-bottom: 15px;
-    display: flex;
-  }
-
-  .footer-location {
-    top: 64.54px;
-    right: -10%;
   }
 }
