@@ -1,11 +1,13 @@
 #portfolio {
   padding-top: 120px;
   padding-bottom: 120px;
-  background: #323232;
   width: 100%;
   height: 917px;
   position: relative;
   overflow: hidden;
+  background: url("/img/portfolio-bg.png");
+  background-color: #323232;
+  background-position: center;
 }
 
 .portfolio-header {
@@ -232,6 +234,10 @@
     padding-top: 80px;
     padding-bottom: 80px;
     height: 682px;
+    background: url("/img/portfolio-bg-tablet.png");
+    background-size: cover;
+    background-color: #323232;
+    background-position: center;
   }
 
   .portfolio-header {
