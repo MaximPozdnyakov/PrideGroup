@@ -145,6 +145,40 @@
   display: none;
 }
 
+@media (max-width: 1199.98px) {
+  .company-description {
+    margin-right: 15px;
+  }
+  .company-img {
+    height: 350px;
+    width: auto;
+  }
+
+  .company-cards {
+    width: 614px;
+    height: 664px;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+
+  .company-card {
+    width: 297px;
+    height: 322px;
+    padding-right: 28px;
+    padding-left: 28px;
+    flex-shrink: 0;
+  }
+
+  .company-card:first-child {
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+
+  .company-features {
+    margin-bottom: 62px;
+  }
+}
+
 @media (max-width: 991.98px) {
   #company {
     margin-top: 80px;

@@ -243,6 +243,12 @@
   width: 100%;
 }
 
+@media (max-width: 1199.98px) {
+  .portfolio-slider-background {
+    margin-left: 7px;
+  }
+}
+
 @media (max-width: 991.98px) {
   #portfolio {
     padding-top: 80px;
