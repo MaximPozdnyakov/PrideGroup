@@ -173,28 +173,6 @@
   top: 30px;
 }
 
-.portfolio-circle-1 {
-  position: absolute;
-  width: 497px;
-  height: 497px;
-  left: -38px;
-  top: -47px;
-  background: rgba(236, 64, 64, 0.5);
-  mix-blend-mode: screen;
-  filter: blur(320px);
-}
-
-.portfolio-circle-2 {
-  position: absolute;
-  width: 479px;
-  height: 479px;
-  right: -102px;
-  top: 43px;
-  background: rgba(64, 112, 236, 0.5);
-  mix-blend-mode: screen;
-  filter: blur(340px);
-}
-
 .portfolio-arrow-left {
   position: absolute;
   left: calc(50% - 531px);
@@ -350,28 +328,6 @@
     right: auto;
   }
 
-  .portfolio-circle-1 {
-    position: absolute;
-    width: 497px;
-    height: 497px;
-    left: -184px;
-    top: -73px;
-    background: rgba(236, 64, 64, 0.5);
-    mix-blend-mode: screen;
-    filter: blur(320px);
-  }
-
-  .portfolio-circle-2 {
-    position: absolute;
-    width: 479px;
-    height: 479px;
-    right: -248px;
-    top: 17px;
-    background: rgba(64, 112, 236, 0.5);
-    mix-blend-mode: screen;
-    filter: blur(340px);
-  }
-
   .portfolio-slider-counter {
     bottom: 80px;
   }
@@ -393,12 +349,15 @@
   }
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   #portfolio {
     padding-top: 60px;
     padding-bottom: 60px;
     width: 100%;
     height: auto;
+    background: url("/img/portfolio-bg-mobile.png");
+    background-size: cover;
+    background-color: #323232;
   }
 
   .portfolio-header {
@@ -506,28 +465,140 @@
     position: static;
     margin-top: 30px;
     width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  .portfolio-circle-2 {
+  .slide.hidden {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 100%;
+    height: auto;
+    background: url("/img/portfolio-bg-mobile.png");
+    background-size: cover;
+    background-color: #323232;
+  }
+
+  .portfolio-header {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .portfolio-header-background {
+    top: 45px;
+    font-size: 78px;
+    line-height: 78px;
+  }
+
+  .portfolio-slider-background {
+    display: none;
+  }
+
+  .portfolio-slider {
+    margin-top: 38px;
+    width: 100%;
+    height: auto;
+    padding: 30px 17px 40px 20px;
+    display: block;
+  }
+
+  .portfolio-slider-subheader {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .portfolio-slider-header {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .portfolio-dots {
     position: absolute;
-    width: 479px;
-    height: 479px;
-    left: 146px;
-    top: 302px;
-    right: auto;
-    background: rgba(64, 112, 236, 0.5);
-    mix-blend-mode: screen;
-    filter: blur(340px);
+    width: 70px;
+    height: 70px;
+    right: 17px;
+    top: 15px;
   }
 
-  .portfolio-circle-1 {
-    width: 497px;
-    height: 497px;
-    right: 114px;
-    left: auto;
-    top: 53px;
-    background: rgba(236, 64, 64, 0.5);
-    mix-blend-mode: screen;
-    filter: blur(320px);
+  .portfolio-slider-images {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .portfolio-slider-left {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  .portfolio-slider-img {
+    margin-right: 8px;
+    width: calc(100% / 3);
+    height: calc(100% / 3 * 185 / 79);
+  }
+
+  .portfolio-slider-img:nth-child(2) {
+    top: 24px;
+  }
+
+  .client-header {
+    font-size: 26px;
+    line-height: 26px;
+    margin-top: 44px;
+  }
+
+  .task-header {
+    font-size: 26px;
+    line-height: 26px;
+    margin-top: 30px;
+  }
+
+  .result-header {
+    font-size: 26px;
+    line-height: 26px;
+    margin-top: 30px;
+  }
+
+  .portfolio-slider-counter {
+    position: static;
+    margin-top: 34px;
+    margin-bottom: 3px;
+  }
+
+  .portfolio-arrow-left {
+    left: calc(50% - 53px);
+    bottom: 60px;
+    top: auto;
+    width: 15px;
+    height: 30px;
+  }
+
+  .portfolio-arrow-right {
+    right: calc(50% - 53px);
+    bottom: 60px;
+    top: auto;
+    width: 15px;
+    height: 30px;
+  }
+
+  .slide {
+    position: static;
+    margin-top: 30px;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slide.hidden {
+    display: none;
   }
 }

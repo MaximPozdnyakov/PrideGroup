@@ -230,13 +230,29 @@
     height: 180.4561309814453px;
     width: 175.26315307617188px;
   }
+
+  .services-card-ellipse {
+    position: absolute;
+    height: 122.6842041015625px;
+    width: 122.6842041015625px;
+    left: -25.96484375px;
+    top: -22.719297409057617px;
+    background: rgba(236, 64, 64, 0.5);
+    mix-blend-mode: screen;
+    filter: blur(51.9298px);
+  }
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   #services {
     top: -50px;
     padding-top: 58px;
     padding-bottom: 60px;
+  }
+
+  .service-img {
+    height: auto;
+    width: 100%;
   }
 
   .services-header {
@@ -271,6 +287,7 @@
     filter: drop-shadow(0px 4px 40px rgba(123, 140, 153, 0.3));
     overflow: hidden;
     margin-bottom: 20px;
+    margin-right: 0;
   }
 
   .services-card:last-child {
@@ -289,5 +306,223 @@
     left: 0;
     object-fit: cover;
     display: block;
+  }
+
+  .services-card-price {
+    position: absolute;
+    top: 197px;
+    right: 0;
+    width: 81px;
+    height: 81px;
+    background: #ec4040;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Gilroy Bold";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .services-card-header {
+    margin-top: 30px;
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 34px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .services-card-description {
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .services-card-link {
+    margin-top: 29px;
+    font-family: "Gilroy Bold";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ec4040;
+    cursor: pointer;
+  }
+
+  .services-btn {
+    margin-top: 20px;
+    width: 240px;
+  }
+
+  .services-card-ellipse {
+    position: absolute;
+    width: 189px;
+    height: 189px;
+    left: -40px;
+    top: -35px;
+    background: rgba(236, 64, 64, 0.5);
+    mix-blend-mode: screen;
+    filter: blur(80px);
+  }
+
+  .services-btn {
+    padding-top: 21px;
+    padding-bottom: 20px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #services {
+    top: -50px;
+    padding-top: 58px;
+    padding-bottom: 60px;
+  }
+
+  .service-img {
+    height: auto;
+    width: 100%;
+  }
+
+  .services-header {
+    font-size: 38px;
+    line-height: 38px;
+  }
+
+  .services-dots {
+    left: calc(50% - 76px);
+    top: 37px;
+    width: 70px;
+    height: 70px;
+  }
+
+  .services-cards {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .services-card {
+    width: 270px;
+    height: 533px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background: #fff;
+    filter: drop-shadow(0px 4px 40px rgba(123, 140, 153, 0.3));
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  .services-card:last-child {
+    margin-bottom: 0px;
+  }
+
+  .services-bg {
+    display: none;
+  }
+
+  .services-bg-mobile {
+    width: 100%;
+    height: 2378px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    display: block;
+  }
+
+  .services-card-price {
+    position: absolute;
+    top: 197px;
+    right: 0;
+    width: 81px;
+    height: 81px;
+    background: #ec4040;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Gilroy Bold";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .services-card-header {
+    margin-top: 30px;
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 34px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .services-card-description {
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .services-card-link {
+    margin-top: 29px;
+    font-family: "Gilroy Bold";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ec4040;
+    cursor: pointer;
+  }
+
+  .services-btn {
+    margin-top: 20px;
+    width: 240px;
+  }
+
+  .services-card-ellipse {
+    position: absolute;
+    width: 189px;
+    height: 189px;
+    left: -40px;
+    top: -35px;
+    background: rgba(236, 64, 64, 0.5);
+    mix-blend-mode: screen;
+    filter: blur(80px);
+  }
+
+  .services-btn {
+    padding-top: 21px;
+    padding-bottom: 20px;
+    height: 60px;
   }
 }

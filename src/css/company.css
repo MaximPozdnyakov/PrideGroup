@@ -253,6 +253,92 @@
   }
 }
 
+@media (max-width: 767.98px) {
+  #company {
+    margin-top: 60px;
+  }
+
+  .company-dots {
+    width: 70px;
+    height: 70px;
+    top: -23px;
+    left: calc(50% - 90px);
+  }
+
+  .company-header {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .company-content {
+    margin-top: 28px;
+    display: block;
+  }
+
+  .company-description {
+    width: calc(100% - 7px);
+    margin-right: 0px;
+    margin-left: 7px;
+  }
+
+  .company-features {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    justify-content: space-between;
+    margin-left: 7px;
+    width: auto;
+    margin-bottom: 30px;
+  }
+
+  .company-feature-main {
+    font-size: 30px;
+  }
+
+  .company-feature-description {
+    font-size: 14px;
+    min-width: 68px;
+  }
+
+  .company-feature {
+    margin-right: 10px;
+  }
+
+  .company-feature-rect {
+    top: 0px;
+  }
+
+  .company-mobile-img {
+    display: block;
+    width: 100%;
+    height: calc(100vw * 207 / 290);
+    margin-bottom: 40px;
+  }
+
+  .company-img {
+    display: none;
+  }
+
+  .company-cards {
+    display: flex;
+    height: 342px;
+    width: 1140px;
+    flex-wrap: nowrap;
+  }
+
+  .company-card {
+    flex-shrink: 0;
+    margin-right: 20px;
+    height: 342px;
+    width: 270px;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .company-mobile-img {
+    top: 0px;
+  }
+}
+
 @media (max-width: 575.98px) {
   #company {
     margin-top: 60px;
@@ -276,7 +362,7 @@
   }
 
   .company-description {
-    width: calc(100vw - 37px);
+    width: calc(100% - 7px);
     margin-right: 0px;
     margin-left: 7px;
   }
@@ -286,6 +372,8 @@
     margin-bottom: 0px;
     justify-content: space-between;
     margin-left: 7px;
+    width: auto;
+    margin-bottom: 30px;
   }
 
   .company-feature-main {
@@ -295,11 +383,10 @@
   .company-feature-description {
     font-size: 14px;
     min-width: 68px;
-    margin-bottom: 30px;
   }
 
   .company-feature {
-    margin-right: 0px;
+    margin-right: 10px;
   }
 
   .company-feature-rect {
@@ -317,8 +404,23 @@
     display: none;
   }
 
+  .company-cards {
+    display: flex;
+    height: 342px;
+    width: 1140px;
+    flex-wrap: nowrap;
+  }
+
   .company-card {
     flex-shrink: 0;
     margin-right: 20px;
+    height: 342px;
+    width: 270px;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .company-mobile-img {
+    top: 0px;
   }
 }
