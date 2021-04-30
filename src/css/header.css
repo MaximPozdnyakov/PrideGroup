@@ -165,4 +165,15 @@
   .header-phone-tablet {
     display: none;
   }
+
+  .header-phone-mobile {
+    margin-right: 12px;
+    height: 40px;
+    width: 40px;
+  }
+
+  .header-hamburger {
+    width: 40px;
+    height: 40px;
+  }
 }

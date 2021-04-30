@@ -63,26 +63,6 @@ html {
     background-size: cover;
     overflow: hidden;
   }
-
-  .lead-bg {
-    display: none;
-  }
-
-  .lead-content {
-    height: 620px;
-    background: none;
-  }
-
-  .lead-text {
-    margin-top: 103px;
-    font-size: 36px;
-    line-height: 36px;
-    margin-bottom: 0;
-  }
-
-  .lead-btn {
-    margin-top: 40px;
-  }
 }
 
 @media (max-width: 575.98px) {
