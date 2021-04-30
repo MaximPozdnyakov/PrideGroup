@@ -214,3 +214,77 @@
     margin-right: 20px;
   }
 }
+
+@media (max-width: 991.98px) {
+  #company {
+    margin-top: 80px;
+  }
+
+  .company-header {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .company-dots {
+    position: absolute;
+    left: calc(50% - 122px);
+    top: -29px;
+    width: 90px;
+    height: 90px;
+  }
+
+  .company-content {
+    margin-top: 62px;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .company-img {
+    display: none;
+  }
+
+  .company-mobile-img {
+    display: block;
+    width: 234px;
+    height: 400px;
+    position: relative;
+    top: -22px;
+    object-fit: cover;
+    object-position: 35% 0%;
+  }
+
+  .company-description {
+    width: 468px;
+    margin-right: 0px;
+  }
+
+  .company-features {
+    margin-top: 28px;
+    margin-bottom: 62px;
+    width: 468px;
+    justify-content: space-between;
+  }
+
+  .company-feature {
+    margin-right: 0px;
+  }
+  .company-cards {
+    width: 614px;
+    height: 664px;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+
+  .company-card {
+    width: 297px;
+    height: 322px;
+    padding-right: 28px;
+    padding-left: 28px;
+    flex-shrink: 0;
+  }
+
+  .company-card:first-child {
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+}

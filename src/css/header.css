@@ -12,6 +12,10 @@
   position: relative;
 }
 
+.header-phone-tablet {
+  display: none;
+}
+
 .header-img {
   margin-right: 44px;
 }
@@ -113,5 +117,36 @@
 
   .header-mobile-icons {
     display: flex;
+  }
+
+  .header-phone-tablet {
+    display: none;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .header-img {
+    width: 109px;
+    height: 90px;
+    margin-right: 35px;
+  }
+
+  .menu-item {
+    margin-right: 13px;
+  }
+
+  .menu {
+    margin-right: 35px;
+  }
+
+  .header-contact {
+    display: none;
+  }
+
+  .header-phone-tablet {
+    display: block;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
   }
 }
