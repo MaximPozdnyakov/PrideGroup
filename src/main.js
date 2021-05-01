@@ -28,4 +28,83 @@ window.addEventListener("load", function () {
         .querySelector(`#slide-${sliderCount}`)
         .classList.toggle("hidden");
     });
+
+  let carouselLeft = 0;
+  let carouselClientX = 0;
+
+  document
+    .querySelector("#company-cards")
+    .addEventListener("touchstart", (e) => {
+      carouselClientX = e.touches[0].clientX;
+    });
+
+  document
+    .querySelector("#company-cards")
+    .addEventListener("touchmove", (e) => {
+      const newLeft = carouselLeft - carouselClientX + e.touches[0].clientX;
+      if (newLeft > 0) {
+        document.querySelectorAll(".company-card").forEach((el) => {
+          el.style.left = "0px";
+        });
+        return;
+      }
+
+      const containerWidth =
+        document.querySelector(".container").clientWidth -
+        2 *
+          parseInt(
+            getComputedStyle(document.querySelector(".container")).paddingRight
+          );
+      if (containerWidth - newLeft > 1140) {
+        document.querySelectorAll(".company-card").forEach((el) => {
+          el.style.left = containerWidth - 1140 + "px";
+        });
+        return;
+      }
+
+      e.preventDefault();
+      carouselLeft = newLeft;
+      document.querySelectorAll(".company-card").forEach((el) => {
+        el.style.left = carouselLeft + "px";
+      });
+      carouselClientX = e.touches[0].clientX;
+
+      const currentDotIndex = Math.floor(
+        -newLeft / ((1140 - containerWidth) / 4)
+      );
+      document.querySelectorAll(".company-dot").forEach((el, i) => {
+        if (i == currentDotIndex) {
+          el.classList.add("current");
+        } else {
+          el.classList.remove("current");
+        }
+      });
+    });
+
+  window.addEventListener("resize", () => {
+    const containerWidth =
+      document.querySelector(".container").clientWidth -
+      2 *
+        parseInt(
+          getComputedStyle(document.querySelector(".container")).paddingRight
+        );
+
+    const currentDotIndex = Math.floor(
+      -carouselLeft / ((1140 - containerWidth) / 4)
+    );
+    document.querySelectorAll(".company-dot").forEach((el, i) => {
+      if (i == currentDotIndex) {
+        el.classList.add("current");
+      } else {
+        el.classList.remove("current");
+      }
+    });
+
+    if (containerWidth - carouselLeft > 1140) {
+      document.querySelectorAll(".company-card").forEach((el) => {
+        el.style.left = containerWidth - 1140 + "px";
+      });
+      return;
+    }
+  });
 });

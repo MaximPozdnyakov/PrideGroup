@@ -66,6 +66,10 @@
   position: relative;
 }
 
+.company-cards-dots {
+  display: none;
+}
+
 .company-feature-main {
   font-family: "Gilroy Bold";
   font-style: normal;
@@ -102,6 +106,8 @@
   width: 100%;
   height: 342px;
   justify-content: space-between;
+  position: relative;
+  z-index: 1;
 }
 
 .company-card {
@@ -116,8 +122,7 @@
   box-shadow: 0px 4px 40px rgba(123, 140, 153, 0.3);
   padding-right: 25.5px;
   padding-left: 25.5px;
-  position: relative;
-  z-index: 1;
+  position: static;
 }
 
 .company-card-header {
@@ -167,6 +172,7 @@
     padding-right: 28px;
     padding-left: 28px;
     flex-shrink: 0;
+    position: static;
   }
 
   .company-card:first-child {
@@ -245,6 +251,7 @@
     padding-right: 28px;
     padding-left: 28px;
     flex-shrink: 0;
+    position: static;
   }
 
   .company-card:first-child {
@@ -325,8 +332,8 @@
     flex-wrap: nowrap;
     overflow-x: hidden;
     position: relative;
-    left: calc(100% / 2 - 100vw / 2);
-    padding-right: calc(100% / 2 - 100vw / 2);
+    left: calc(270px - 50vw);
+    padding-left: calc(50vw - 270px);
   }
 
   .company-card {
@@ -336,10 +343,35 @@
     width: 270px;
     padding-right: 24px;
     padding-left: 24px;
+    position: relative;
   }
 
   .company-mobile-img {
     top: 0px;
+  }
+
+  .company-cards-dots {
+    display: flex;
+    height: 10px;
+    position: absolute;
+    bottom: -25px;
+    z-index: 100;
+  }
+
+  .company-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background: #c4c4c4;
+    margin-right: 5px;
+  }
+
+  .company-dot:last-child {
+    margin-right: 0;
+  }
+
+  .company-dot.current {
+    background: #ec4040;
   }
 }
 
@@ -426,6 +458,7 @@
     width: 270px;
     padding-right: 24px;
     padding-left: 24px;
+    position: relative;
   }
 
   .company-mobile-img {
