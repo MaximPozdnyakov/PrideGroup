@@ -62,6 +62,7 @@
 .footer-author-underline {
   text-transform: uppercase;
   text-decoration: underline;
+  color: #ffffff;
 }
 
 .footer-date {
